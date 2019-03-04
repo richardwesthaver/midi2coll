@@ -8,7 +8,6 @@ from os.path import isdir, isfile, splitext
 def midi_parse(arg):
 
     def write(arg):
-        seq = 1
         t = 0.
         coll = []
         for msg in MidiFile(str(arg)):
@@ -41,4 +40,5 @@ def midi_parse(arg):
 
 
 midi=input('midi file or directory: ')
+seq = input('seq~ sequence name: ')
 midi_parse(midi)
